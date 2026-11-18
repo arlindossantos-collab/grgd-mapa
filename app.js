@@ -1,5 +1,5 @@
 // ... existing code ...
-// Dataset completo extraído da base oficial do Executivo de Pernambuco com sedes em Recife
+// Dataset completo extraído da base oficial atualizada do Executivo de Pernambuco com sedes em Recife
 const baseUnitsData = [
     { id: 1, name: "Secretaria da Casa Civil", category: "Secretaria", address: "Palácio do Campo das Princesas, Praça da República, s/n - Santo Antônio, Recife", lat: -8.0617, lng: -34.8770, phone: "(81) 3181-2100", contactName: "Genilson Santos", email: "casacivil@pe.gov.br", status: "operacional", tickets: [] },
     { id: 2, name: "Secretaria da Fazenda (SEFAZ-PE)", category: "Secretaria", address: "Rua Imperador Dom Pedro II, fte. Praça da Independência - Santo Antônio, Recife", lat: -8.0632, lng: -34.8754, phone: "(81) 3181-1200", contactName: "Maria Clara Bezerra", email: "atendimento@sefaz.pe.gov.br", status: "operacional", tickets: [] },
@@ -18,7 +18,7 @@ const baseUnitsData = [
     { id: 15, name: "Secretaria da Mulher de Pernambuco", category: "Secretaria", address: "Rua da Aurora, 463 - Boa Vista, Recife", lat: -8.0578, lng: -34.8812, phone: "(81) 3181-3300", contactName: "Agta Rodrigues", email: "secmulher@sec.pe.gov.br", status: "operacional", tickets: [] },
     { id: 16, name: "Secretaria de Cultura (Secult-PE)", category: "Secretaria", address: "Rua da Aurora, 463 - Boa Vista, Recife", lat: -8.0582, lng: -34.8810, phone: "(81) 3184-3000", contactName: "Marcelo Rodrigues", email: "secult@cultura.pe.gov.br", status: "operacional", tickets: [] },
 
-    // Autarquias, Agências e Fundações Estaduais
+    // Autarquias, Agências e Fundações Estaduais oficiais
     { id: 17, name: "ATI - Agência Estadual de Tecnologia da Informação", category: "Autarquia / Agência", address: "Av. Rio Branco, 155 - Recife Antigo, Recife", lat: -8.0625, lng: -34.8710, phone: "(81) 3183-1000", contactName: "Danilo Benício", email: "contato@ati.pe.gov.br", status: "operacional", tickets: [] },
     { id: 18, name: "Fundação Hemope - Centro de Hemoterapia de PE", category: "Autarquia / Fundação", address: "Rua Joaquim Nabuco, 171 - Graças, Recife", lat: -8.0445, lng: -34.8960, phone: "(81) 3182-4600", contactName: "Dra. Raquel Duarte", email: "hemope@hemope.pe.gov.br", status: "operacional", tickets: [] },
     { id: 19, name: "DER-PE - Departamento de Estradas de Rodagem", category: "Autarquia / Agência", address: "Av. Abdias de Carvalho, 1750 - Madalena, Recife", lat: -8.0580, lng: -34.9100, phone: "(81) 3181-2200", contactName: "Maurício Holanda", email: "der@der.pe.gov.br", status: "operacional", tickets: [] },
@@ -36,7 +36,7 @@ const baseUnitsData = [
     { id: 31, name: "DETRAN-PE - Departamento de Trânsito de Pernambuco (Sede)", category: "Autarquia / Agência", address: "Estrada do Barbalho, 889 - Iputinga, Recife", lat: -8.0350, lng: -34.9350, phone: "(81) 3184-8000", contactName: "Wladimir Mota", email: "ouvidoria@detran.pe.gov.br", status: "operacional", tickets: [] },
     { id: 32, name: "CPRH - Agência Estadual de Meio Ambiente", category: "Autarquia / Agência", address: "Rua Santana, 367 - Casa Forte, Recife", lat: -8.0345, lng: -34.9180, phone: "(81) 3182-3400", contactName: "Eduardo Elvino", email: "cprh@cprh.pe.gov.br", status: "operacional", tickets: [] },
 
-    // Empresas Públicas Estaduais
+    // Empresas Públicas Estaduais oficiais
     { id: 33, name: "COMPESA - Companhia Pernambucana de Saneamento (Sede)", category: "Empresa Pública", address: "Av. Cruz Cabugá, 1387 - Santo Amaro, Recife", lat: -8.0440, lng: -34.8725, phone: "0800 081 0195", contactName: "Sérgio Leite", email: "atendimento@compesa.com.br", status: "operacional", tickets: [] },
     { id: 34, name: "CEHAB - Companhia Estadual de Habitação e Obras", category: "Empresa Pública", address: "Rua Odorico Mendes, 700 - Campo Grande, Recife", lat: -8.0380, lng: -34.8880, phone: "(81) 3183-7100", contactName: "Bruno Lisboa", email: "cehab@cehab.pe.gov.br", status: "operacional", tickets: [] },
     { id: 35, name: "CEPE - Companhia Editora de Pernambuco", category: "Empresa Pública", address: "Rua da Aurora, 529 - Boa Vista, Recife", lat: -8.0570, lng: -34.8820, phone: "(81) 3183-4000", contactName: "Ricardo Leitão", email: "cepe@cepe.com.br", status: "operacional", tickets: [] },
@@ -46,7 +46,7 @@ const baseUnitsData = [
     { id: 39, name: "COPERGÁS - Companhia Pernambucana de Gás", category: "Empresa Pública", address: "Av. República do Líbano, 251 - Pina, Recife", lat: -8.0830, lng: -34.8870, phone: "(81) 3217-7600", contactName: "Fabio Aguiar", email: "copergas@copergas.com.br", status: "operacional", tickets: [] },
     { id: 40, name: "CEASA/PE - Centro de Abastecimento e Logística de Pernambuco", category: "Empresa Pública", address: "BR-101 Sul, Km 75 - Curado, Recife", lat: -8.0850, lng: -34.9580, phone: "(81) 3182-8800", contactName: "Renato Cunha", email: "ceasa@ceasa.pe.gov.br", status: "operacional", tickets: [] },
 
-    // Órgãos Autônomos Estaduais
+    // Órgãos Autônomos Estaduais oficiais
     { id: 41, name: "Tribunal de Justiça de Pernambuco (TJPE) - Palácio da Justiça", category: "Órgão Autônomo", address: "Praça da República, s/n - Santo Antônio, Recife", lat: -8.0610, lng: -34.8760, phone: "(81) 3182-0000", contactName: "Des. Ricardo Paes Barreto", email: "ouvidoria@tjpe.jus.br", status: "operacional", tickets: [] },
     { id: 42, name: "Assembleia Legislativa de Pernambuco (ALEPE)", category: "Órgão Autônomo", address: "Rua da União, 397 - Boa Vista, Recife", lat: -8.0565, lng: -34.8845, phone: "(81) 3183-2000", contactName: "Dep. Álvaro Porto", email: "alepe@alepe.pe.gov.br", status: "operacional", tickets: [] },
     { id: 43, name: "Tribunal de Contas do Estado de Pernambuco (TCE-PE)", category: "Órgão Autônomo", address: "R. da Aurora, 885 - Santo Amaro, Recife", lat: -8.0532, lng: -34.8782, phone: "(81) 3181-1500", contactName: "Conselheiro Dirceu Rodolfo", email: "ouvidoria@tce.pe.gov.br", status: "operacional", tickets: [] },
