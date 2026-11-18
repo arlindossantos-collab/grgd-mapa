@@ -1,7 +1,6 @@
 // ... existing code ...
-// Dataset completo com as sedes e órgãos estaduais oficiais de Pernambuco localizados em Recife (Base Consolidada Organograma PE)
+// Dataset completo extraído da base oficial do Executivo de Pernambuco com sedes em Recife
 const baseUnitsData = [
-    // Secretarias Estaduais
     { id: 1, name: "Secretaria da Casa Civil", category: "Secretaria", address: "Palácio do Campo das Princesas, Praça da República, s/n - Santo Antônio, Recife", lat: -8.0617, lng: -34.8770, phone: "(81) 3181-2100", contactName: "Genilson Santos", email: "casacivil@pe.gov.br", status: "operacional", tickets: [] },
     { id: 2, name: "Secretaria da Fazenda (SEFAZ-PE)", category: "Secretaria", address: "Rua Imperador Dom Pedro II, fte. Praça da Independência - Santo Antônio, Recife", lat: -8.0632, lng: -34.8754, phone: "(81) 3181-1200", contactName: "Maria Clara Bezerra", email: "atendimento@sefaz.pe.gov.br", status: "operacional", tickets: [] },
     { id: 3, name: "Secretaria de Administração (SAD)", category: "Secretaria", address: "Av. General Edgar Corréa de Lima, 630 - Santo Amaro, Recife", lat: -8.0550, lng: -34.8820, phone: "(81) 3183-8000", contactName: "Carlos Eduardo Melo", email: "sad@sad.pe.gov.br", status: "operacional", tickets: [] },
@@ -19,7 +18,7 @@ const baseUnitsData = [
     { id: 15, name: "Secretaria da Mulher de Pernambuco", category: "Secretaria", address: "Rua da Aurora, 463 - Boa Vista, Recife", lat: -8.0578, lng: -34.8812, phone: "(81) 3181-3300", contactName: "Agta Rodrigues", email: "secmulher@sec.pe.gov.br", status: "operacional", tickets: [] },
     { id: 16, name: "Secretaria de Cultura (Secult-PE)", category: "Secretaria", address: "Rua da Aurora, 463 - Boa Vista, Recife", lat: -8.0582, lng: -34.8810, phone: "(81) 3184-3000", contactName: "Marcelo Rodrigues", email: "secult@cultura.pe.gov.br", status: "operacional", tickets: [] },
 
-    // Autarquias, Agências e Fundações Estaduais (Conforme Organograma Oficial)
+    // Autarquias, Agências e Fundações Estaduais
     { id: 17, name: "ATI - Agência Estadual de Tecnologia da Informação", category: "Autarquia / Agência", address: "Av. Rio Branco, 155 - Recife Antigo, Recife", lat: -8.0625, lng: -34.8710, phone: "(81) 3183-1000", contactName: "Danilo Benício", email: "contato@ati.pe.gov.br", status: "operacional", tickets: [] },
     { id: 18, name: "Fundação Hemope - Centro de Hemoterapia de PE", category: "Autarquia / Fundação", address: "Rua Joaquim Nabuco, 171 - Graças, Recife", lat: -8.0445, lng: -34.8960, phone: "(81) 3182-4600", contactName: "Dra. Raquel Duarte", email: "hemope@hemope.pe.gov.br", status: "operacional", tickets: [] },
     { id: 19, name: "DER-PE - Departamento de Estradas de Rodagem", category: "Autarquia / Agência", address: "Av. Abdias de Carvalho, 1750 - Madalena, Recife", lat: -8.0580, lng: -34.9100, phone: "(81) 3181-2200", contactName: "Maurício Holanda", email: "der@der.pe.gov.br", status: "operacional", tickets: [] },
